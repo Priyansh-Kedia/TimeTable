@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130782039-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-130782039-2');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BITS TimeTable Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.png" sizes="24x24" type="image/png"> 
+</head>
+<body>
+    <div id="container">
+        <span id="title">BITS Time &dash; Table Visualizer</span>
+        <div id="input-container">
+            <div class="input-box">
+                <label>Course title:</label>
+                 <select id="course-title">
+  		<option value="MATH F211 Mathematics III">MATH F211 Mathematics III</option>
+  		<option value="CHE F211 Chemical Process Calculations">CHE F211 Chemical Process Calculations</option>
+  		<option value="CHE F214 Engineering Chemistry">CHE F214 Engineering Chemistry</option>
+ 		 <option value="CHE F214 Engineering Chemistry Thermodynamics">CHE F214 Engineering Chemistry Thermodynamics</option>
+		<option value="CHE F212 Fluid Mechanics">CHE F212 Fluid Mechanics</option>
+		
+		
+		<option value="CE F211 Mechanics of Solids">CE F211 Mechanics of Solids </option>
+		<option value="CE F231 Fluid Mechanics">CE F231 Fluid Mechanics </option>
+		<option value="CE F213 Surveying ">CE F213 Surveying  </option>
+		<option value="CE F230 Civil Engineering Materials ">CE F230 Civil Engineering Materials  </option>
+		<option value="CS F214 Logic in Computer Science">CS F214 Logic in Computer Science </option>
+		<option value="CS F222 Discrete Structures for ">CS F222 Discrete Structures for computer science </option>
+		<option value="CS F213 Object Oriented Programming">CS F213 Object Oriented Programming </option>
+		<option value="CS F215 Digital Design ">CS F215 Digital Design  </option>
+		<option value="EEE F211 Electrical Machines">EEE F211 Electrical Machines </option>
+		<option value="EEE F212 Electromagnetic Theory">EEE F212 Electromagnetic Theory </option>
+		<option value="EEE F215 Digital Design ">EEE F215 Digital Design  </option>
+		<option value="EEE F214 Electronic Devices">EEE F214 Electronic Devices </option>
+		
+		<option value="INSTR F211 Electrical Machines">INSTR F211 Electrical Machines </option>
+		<option value="INSTR F212 Electromagnetic Theory ">INSTR F212 Electromagnetic Theory  </option>
+		<option value="INSTR F215 Digital Design ">INSTR F215 Digital Design  </option>
+		<option value="INSTR F214 Electronic Devices">INSTR F214 Electronic Devices </option>
+		<option value="ME F213 Materials Science & Engineering">ME F213 Materials Science & Engineering </option>
+		<option value="ME F212 Fluid Mechanics">ME F212 Fluid Mechanics </option>
+		<option value="ME F211 Mechanics of Solids">ME F211 Mechanics of Solids </option>
+		<option value="ME F214 Applied Thermodynamics"> ME F214 Applied Thermodynamics</option>
+		<option value="ME F215 Mechanical Engineering Laboratory">ME F215 Mechanical Engineering Laboratory </option>
+		<option value="MF F213 Materials Science & Engineering">MF F213 Materials Science & Engineering </option>
+		<option value="MF F212 Fluid Mechanics"> MF F212 Fluid Mechanics</option>
+		<option value="MF F211 Mechanics of Solids">MF F211 Mechanics of Solids </option>
+		<option value="MF F214 Applied Thermodynamics">MF F214 Applied Thermodynamics </option>
+		<option value="MF F215 Mechanical Engineering Laboratory"> MF F215 Mechanical Engineering Laboratory</option>
+		<option value="PHA F211 Pharmaceutical Analysis"> PHA F211 Pharmaceutical Analysis</option>
+		<option value="PHA F214 Anatomy, Physiology & Hygiene">PHA F214 Anatomy, Physiology & Hygiene </option>
+		<option value="PHA F212 Dispensing Pharmacy"> PHA F212 Dispensing Pharmacy</option>
+		<option value="PHA F213 Microbiology ">PHA F213 Microbiology  </option>
+		<option value="BITS F225 Environmental Studies "> BITS F225 Environmental Studies </option>
+
+		<option value="BITS F218 General Mathematics III* "> BITS F218 General Mathematics III* </option>
+		<option value="PHA F242 Biological Chemistry "> PHA F242 Biological Chemistry </option>
+		<option value="BITS F219 Process Engineering">BITS F219 Process Engineering </option>
+		<option value="BIO F211 Biological Chemistry"> BIO F211 Biological Chemistry</option>
+		<option value="BIO F213 Cell Biology ">BIO F213 Cell Biology  </option>
+		<option value="BIO F212 Microbiology"> BIO F212 Microbiology</option>
+		<option value="BIO F214 Integrated Biology"> BIO F214 Integrated Biology</option>
+
+		<option value="CHEM F211 Physical Chemistry I "> CHEM F211 Physical Chemistry I </option>
+		<option value="CHEM F212 Organic Chemistry I">CHEM F212 Organic Chemistry I </option>
+		<option value="CHEM F213 Physical Chemistry II"> CHEM F213 Physical Chemistry II </option>
+		<option value="PHY F212 Electromagnetic Theory I"> PHY F212 Electromagnetic Theory I</option>
+			<option value="CHEM F214 Inorganic Chemistry I"> CHEM F214 Inorganic Chemistry I</option>
+		<option value="ECON F211 Principles of Economics"> ECON F211 Principles of Economics</option>
+		<option value="ECON F212 Fundamentals of Finance & Accounts"> ECON F212 Fundamentals of Finance & Accounts</option>
+			<option value="ECON F213 Mathematical & Statistical Methods">ECON F213 Mathematical & Statistical Methods </option>
+		<option value="ECON F214 Economic Environment of Business">ECON F214 Economic Environment of Business </option>
+
+		<option value="MATH F212 Optimization ">MATH F212 Optimization  </option>
+		<option value="MATH F213 Discrete Mathematics"> MATH F213 Discrete Mathematics</option>
+		<option value="MATH F214 Elementary Real Analysis ">MATH F214 Elementary Real Analysis  </option>
+		<option value="MATH F215 Algebra I">MATH F215 Algebra I </option>
+		<option value="PHY F211 Classical Mechanics">PHY F211 Classical Mechanics </option>
+		<option value="PHY F212 Electromagnetic Theory I">PHY F212 Electromagnetic Theory I </option>
+		<option value="PHY F213 Optics"> PHY F213 Optics</option>
+		<option value="PHY F214 Electricity, Magnetism & Optics Laboratory"> PHY F214 Electricity, Magnetism & Optics Laboratory</option>
+		<option value="GS F221 Business Communication">GS F221 Business Communication </option>
+		<option value="GS F222 Language Lab Practice">GS F222 Language Lab Practice </option>
+		<option value="GS F223 Introduction to Mass Communication ">GS F223 Introduction to Mass Communication</option>
+		<option value="GS F224 Print & Audio Visual Advertising">GS F224 Print & Audio Visual Advertising </option>
+		<option value="GS F211 Modern Political Concepts "> GS F211 Modern Political Concepts </option>
+		<option value="GS F213 Development Theories">GS F213 Development Theories </option>
+		<option value="ECON F211 Principles of Economics "> ECON F211 Principles of Economics </option>
+		<option value="GS F212 Environment, Development & Climate Change">GS F212 Environment, Development & Climate Change</option>
+
+
+
+		</select>
+            </div>
+            <div class="input-box">
+                <label>Classroom:</label>
+                <input type="text" id="classroom" />
+            </div>
+            <div class="input-box">
+                <label>Section and/or teacher:</label>
+                <input type="text" id="section" />
+            </div>
+            <div class="input-box">
+                <label>Select days:</label>
+                <select id="days" name="days[]" multiple="multiple">
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                    <option value="7">Sunday</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Select hours:</label>
+                <select id="hours" name="hours[]" multiple="multiple">
+                    <option value="1">1: 8:00 - 9:00</option>
+                    <option value="2">2: 9:00 - 10:00</option>
+                    <option value="3">3: 10:00 - 11:00</option>
+                    <option value="4">4: 11:00 - 12:00</option>
+                    <option value="5">5: 12:00 - 13:00</option>
+                    <option value="6">6: 13:00 - 14:00</option>
+                    <option value="7">7: 14:00 - 15:00</option>
+                    <option value="8">8: 15:00 - 16:00</option>
+                    <option value="9">9: 16:00 - 17:00</option>
+                    <option value="10">10: 17:00 - 18:00</option>
+                    <option value="11">11: 18:00 - 19:00</option>
+                </select>
+            </div>
+            <div id="buttons">
+                <button id="add-btn">Add</button>
+                <button id="undo-btn">Undo</button>
+            </div>
+        </div>
+        <span><i>Click on the cell to delete the added course</i></span>
+        <br>
+        <div id="timetable">
+
+        </div>
+        <div id="error">
+
+        </div>
+        
+        
+        
+    </div>
+    <div id="desktopView">
+        Please view on desktop.
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
